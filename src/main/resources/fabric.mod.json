@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "orbitclient",
+  "version": "${version}",
+  "name": "Orbit Client",
+  "description": "An all-in-one, highly customizable Fabric client for Minecraft 1.21.11 with 90+ configurable HUD, PvP, visual, performance and utility modules with an Orbit-themed Right Shift dashboard.",
+  "authors": ["Orbit Client"],
+  "icon": "assets/orbitclient/logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.orbit.client.OrbitClient"]
+  },
+  "mixins": ["orbitclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
